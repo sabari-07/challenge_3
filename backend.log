@@ -1,0 +1,24 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\Dell\\Desktop\\AIgnition']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [20804] using StatReload
+INFO:     Started server process [23184]
+INFO:     Waiting for application startup.
+INFO:src.api.app:Initializing forecasting system...
+INFO:src.data.loader:Loading data from all channels...
+INFO:src.data.loader:Loading Google Ads from data\google_ads_campaign_stats.csv
+INFO:src.data.loader:Loading Bing Ads from data\bing_campaign_stats.csv
+INFO:src.data.loader:Loading Meta Ads from data\meta_ads_campaign_stats.csv
+INFO:src.data.loader:Total records loaded: 25562
+INFO:src.data.loader:Date range: 2024-01-01 to 2026-06-05
+INFO:src.data.preprocessor:Validating campaign consistency...
+INFO:src.data.preprocessor:Validation complete: valid
+INFO:src.data.preprocessor:Issues: 0, Warnings: 47
+INFO:src.api.app:Campaign validation: valid
+INFO:src.api.app:Validation warnings: ['Campaign 9988712287 (google) has 1 gaps > 7 days', 'Campaign 18253990962 (google) has 2 gaps > 7 days', 'Campaign 19902093803 (google) has 1 gaps > 7 days', 'Campaign 21263646438 (google) has 1 gaps > 7 days', 'Campaign 21551974931 (google) has 1 gaps > 7 days', 'Campaign 21555598453 (google) has 2 gaps > 7 days', 'Campaign 21560212684 (google) has 1 gaps > 7 days', 'Campaign 21567626631 (google) has 1 gaps > 7 days', 'Campaign 21577977814 (google) has 1 gaps > 7 days', 'Campaign 21587818996 (google) has 1 gaps > 7 days', 'Campaign 21663737223 (google) has 1 gaps > 7 days', 'Campaign 21777702230 (google) has 1 gaps > 7 days', 'Campaign 21784340082 (google) has 1 gaps > 7 days', 'Campaign 21784340304 (google) has 1 gaps > 7 days', 'Campaign 21794370952 (google) has 2 gaps > 7 days', 'Campaign 21802413975 (google) has 1 gaps > 7 days', 'Campaign 21802413978 (google) has 1 gaps > 7 days', 'Campaign 21808837082 (google) has 3 gaps > 7 days', 'Campaign 21812740018 (google) has 1 gaps > 7 days', 'Campaign 21885723757 (google) has 1 gaps > 7 days', 'Campaign 22094147466 (google) has 1 gaps > 7 days', 'Campaign 22104151159 (google) has 1 gaps > 7 days', 'Campaign 22211017654 (google) has 1 gaps > 7 days', 'Campaign 22635965025 (google) has 1 gaps > 7 days', 'Campaign 22645714681 (google) has 1 gaps > 7 days', 'Campaign 22739335904 (google) has 1 gaps > 7 days', 'Campaign 22866636855 (google) has 1 gaps > 7 days', 'Campaign 22946407106 (google) has 1 gaps > 7 days', 'Campaign 23205156959 (google) has 1 gaps > 7 days', 'Campaign 23259820296 (google) has 1 gaps > 7 days', 'Campaign 120231960742960533 (meta) has 1 gaps > 7 days', 'Campaign 566560838 (bing) has 2 gaps > 7 days', 'Campaign 569378946 (bing) has 2 gaps > 7 days', 'Campaign 570837610 (bing) has 1 gaps > 7 days', 'Campaign 570837613 (bing) has 1 gaps > 7 days', 'Campaign 570837617 (bing) has 1 gaps > 7 days', 'Campaign 570837618 (bing) has 1 gaps > 7 days', 'Campaign 570837622 (bing) has 1 gaps > 7 days', 'Campaign 570837625 (bing) has 1 gaps > 7 days', 'Campaign 570837626 (bing) has 3 gaps > 7 days', 'Campaign 570837627 (bing) has 1 gaps > 7 days', 'Campaign 570837630 (bing) has 1 gaps > 7 days', 'Campaign 570837632 (bing) has 1 gaps > 7 days', 'Campaign 570837631 (bing) has 1 gaps > 7 days', 'Campaign 570837633 (bing) has 1 gaps > 7 days', 'Found 1772 potential spend anomalies (3x IQR)', 'Found 1832 potential revenue anomalies (3x IQR)']
+INFO:src.ai.cohere_client:Initialized Cohere client with model: command-r-plus-08-2024
+INFO:src.simulation.budget_optimizer:Fitted spend response curve for google: coef=13517.32
+INFO:src.simulation.budget_optimizer:Fitted spend response curve for meta: coef=2634.15
+INFO:src.simulation.budget_optimizer:Fitted spend response curve for bing: coef=-14.98
+INFO:src.api.app:System initialized successfully
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51425 - "GET / HTTP/1.1" 200 OK
